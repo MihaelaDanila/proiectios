@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F645C022A18147E004A8A9D /* Proiect IOS in Resources */ = {isa = PBXBuildFile; fileRef = 3F645C012A18147E004A8A9D /* Proiect IOS */; };
 		6D199E252A090B7000394A80 /* Proiect_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D199E242A090B7000394A80 /* Proiect_IOSApp.swift */; };
 		6D199E272A090B7000394A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D199E262A090B7000394A80 /* ContentView.swift */; };
 		6D199E292A090B7200394A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D199E282A090B7200394A80 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F645C012A18147E004A8A9D /* Proiect IOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Proiect IOS"; path = "../Proiect IOS-3/Proiect IOS"; sourceTree = "<group>"; };
 		6D199E212A090B7000394A80 /* Proiect IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proiect IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D199E242A090B7000394A80 /* Proiect_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proiect_IOSApp.swift; sourceTree = "<group>"; };
 		6D199E262A090B7000394A80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				6D199E232A090B7000394A80 /* Proiect IOS */,
+				3F645C012A18147E004A8A9D /* Proiect IOS */,
 				6D199E352A090B7200394A80 /* Proiect IOSTests */,
 				6D199E3F2A090B7200394A80 /* Proiect IOSUITests */,
 				6D199E222A090B7000394A80 /* Products */,
@@ -356,6 +359,7 @@
 			files = (
 				6D199E2D2A090B7200394A80 /* Preview Assets.xcassets in Resources */,
 				6DAEF47A2A1647B300C845A3 /* GoogleService-Info.plist in Resources */,
+				3F645C022A18147E004A8A9D /* Proiect IOS in Resources */,
 				6D199E292A090B7200394A80 /* Assets.xcassets in Resources */,
 				6DAEF4782A1644F700C845A3 /* Auth in Resources */,
 			);
