@@ -1,5 +1,7 @@
 import Foundation
 import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
 
 enum AuthenticationState {
   case unauthenticated
@@ -10,6 +12,10 @@ enum AuthenticationState {
 enum AuthenticationFlow {
   case login
   case signUp
+}
+
+struct UserInfo {
+    static var email = ""
 }
 
 @MainActor
@@ -47,6 +53,8 @@ class AuthenticationViewModel: ObservableObject {
         self.user = user
         self.authenticationState = user == nil ? .unauthenticated : .authenticated
         self.displayName = user?.email ?? ""
+          UserInfo.email = user?.email ?? ""
+
       }
     }
   }
@@ -96,6 +104,17 @@ extension AuthenticationViewModel {
     authenticationState = .authenticating
     do  {
       try await Auth.auth().createUser(withEmail: email, password: password)
+        
+      // create collection for new user
+        let db = Firestore.firestore()
+        db.collection(self.displayName).document("newUser").setData([:]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+        
       return true
     }
     catch {
